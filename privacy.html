@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Me Myself &amp; I | Digital Compass Foundation</title>
+<meta name="description" content="Privacy policy for Me Myself & I — Your Witness. Zero-knowledge encryption. We cannot access your evidence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --teal: #2A7D6E; --teal-dark: #1B5E50; --coral: #D4826A; --coral-light: #E8A892;
+  --cream: #FBF7F2; --cream-warm: #F5EDE4; --charcoal: #1E2A35; --charcoal-soft: #3A4A5A;
+  --sage: #A8C5B8; --sage-light: #D0E0D6;
+}
+body { font-family: 'DM Sans', Arial, sans-serif; color: var(--charcoal); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+nav { position: fixed; top:0; left:0; right:0; z-index:100; background: rgba(30,42,53,0.95); backdrop-filter: blur(12px); padding: 0 40px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { color: var(--cream); font-size: 16px; font-weight: 600; letter-spacing: 0.5px; }
+.nav-logo span { color: var(--coral); }
+.nav-links { display:flex; gap:32px; }
+.nav-links a { color: var(--sage-light); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--cream); }
+.nav-links a.active { color: var(--coral-light); }
+footer { background: var(--charcoal); color: var(--sage-light); text-align: center; padding: 40px; font-size: 14px; border-top: 1px solid rgba(255,255,255,0.08); }
+footer a { color: var(--coral-light); text-decoration: none; }
+.footer-links { margin-top: 16px; display: flex; gap: 24px; justify-content: center; }
+
+.page-content { max-width: 800px; margin: 0 auto; padding: 120px 40px 80px; }
+.page-content h1 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 40px; line-height: 1.2; margin-bottom: 8px; }
+.page-content .subtitle { font-size: 18px; color: var(--charcoal-soft); margin-bottom: 48px; }
+.page-content h2 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 24px; color: var(--teal); margin: 40px 0 16px; }
+.page-content h3 { font-size: 18px; font-weight: 600; margin: 24px 0 12px; }
+.page-content p { font-size: 16px; line-height: 1.7; color: var(--charcoal-soft); margin-bottom: 16px; }
+.page-content ul { margin: 0 0 16px 24px; }
+.page-content li { font-size: 16px; line-height: 1.7; color: var(--charcoal-soft); margin-bottom: 8px; }
+.page-content strong { color: var(--charcoal); }
+.highlight-box { background: var(--cream-warm); border-left: 4px solid var(--teal); padding: 20px 24px; border-radius: 0 12px 12px 0; margin: 24px 0; }
+.highlight-box p { margin-bottom: 0; }
+
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 13px; }
+  .page-content { padding: 100px 20px 60px; }
+  .page-content h1 { font-size: 32px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" style="text-decoration:none;"><div class="nav-logo">Digital Compass <span>Foundation</span></div></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html" class="active">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</nav>
+
+<div class="page-content">
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Me Myself &amp; I &mdash; Your Witness &nbsp;|&nbsp; Last updated: November 2026</p>
+
+  <div class="highlight-box">
+    <p><strong>The short version:</strong> We cannot see your evidence. We cannot access it, even if asked by a court. Everything is encrypted on your device before it goes anywhere. We don't track you, we don't sell data, and there are no ads. This policy explains how that works.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p><strong>Digital Compass Foundation</strong> is a Charitable Incorporated Organisation (CIO) registered in England and Wales. We build Me Myself &amp; I &mdash; Your Witness, a free app that helps people experiencing abuse safely document evidence.</p>
+  <p>Contact: <a href="mailto:privacy@digitalcompassfoundation.org" style="color:var(--teal);">privacy@digitalcompassfoundation.org</a></p>
+
+  <h2>What the app does with your data</h2>
+
+  <h3>Zero-knowledge architecture</h3>
+  <p>We designed this app so that <strong>we cannot access your evidence</strong>. This is not a policy choice &mdash; it is a technical fact. All evidence (voice recordings, photos, videos, text entries) is encrypted on your device using AES-256-GCM before it is stored or transmitted anywhere. The encryption keys are derived from your personal recovery mnemonic, which only you know. We do not hold a copy of your keys.</p>
+  <p>If a court, law enforcement agency, or any other authority asked us to hand over your evidence, we could not do so. We do not have the technical ability to decrypt it.</p>
+
+  <h3>What stays on your device</h3>
+  <ul>
+    <li>All evidence (voice, photo, video, text) &mdash; encrypted on your device at the moment of capture</li>
+    <li>Your recovery mnemonic (24 words) &mdash; stored only on your device or where you choose to write it down</li>
+    <li>Voice transcriptions &mdash; processed on your device by an AI model (OpenAI Whisper, 39MB) that runs entirely locally. No audio or transcript is sent to any server.</li>
+    <li>Health data snapshots &mdash; if you choose to attach Apple Health or Google Health Connect data to an incident, that data is read on your device, encrypted, and sealed into your evidence chain. We never see it.</li>
+  </ul>
+
+  <h3>What leaves your device (only if you choose)</h3>
+  <ul>
+    <li><strong>Cloud backup</strong> (optional) &mdash; If you turn on cloud backup, your evidence is synced to our servers. It is encrypted before it leaves your device, using keys we do not hold. We store encrypted data we cannot read. Backups sync over wifi only by default. Data is stored in the country you select: Sydney (Australia) or London (United Kingdom).</li>
+    <li><strong>Timestamps</strong> &mdash; When you seal evidence, the app requests an independent timestamp from two separate RFC 3161 timestamp authorities (FreeTSA and DigiCert). This proves when evidence was created. The timestamp request contains a hash of your evidence, not the evidence itself.</li>
+    <li><strong>Sharing</strong> &mdash; When you choose to share evidence with a lawyer, support worker, or police officer, you generate a QR code and a separate 6-word decryption key. Without both, the evidence cannot be accessed. You can revoke access at any time from the app.</li>
+  </ul>
+
+  <h3>Future AI features</h3>
+  <p>We plan to integrate AI-powered follow-up questions using Anthropic's Claude. When this feature launches, only PII-stripped transcripts will be sent to the API &mdash; names, addresses, phone numbers, and other identifying information will be removed on your device before anything is transmitted. Anthropic does not retain data sent through its API. This feature will be clearly labelled and optional.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>We do not track your location (the app captures GPS on evidence items with your device's permission, but we never see this data)</li>
+    <li>We do not use analytics on your evidence content</li>
+    <li>We do not display advertising</li>
+    <li>We do not sell, share, or trade any user data</li>
+    <li>We do not send push notifications, display badges, or make sounds</li>
+    <li>We do not store anything in your camera roll, photo gallery, or device backups</li>
+    <li>We do not require an email address or user account for core functionality</li>
+  </ul>
+
+  <h2>Your invisible footprint</h2>
+  <p>The app is designed to be undetectable on your device. It appears as "Calc+" &mdash; a calculator app. Nothing in your app drawer, settings, battery usage, storage, or notifications reveals its true purpose. The app does not appear in your camera roll, clipboard history, or device backups (where technically possible). This is a safety feature for people whose devices may be monitored.</p>
+
+  <h2>Recovery and trusted contacts</h2>
+  <p>Your evidence is protected by a 24-word recovery mnemonic. If you lose your phone, this mnemonic reconstructs your encryption keys on a new device. You can optionally split this mnemonic across trusted contacts using Shamir's Secret Sharing &mdash; any two of three contacts can reconstruct your key, but no single contact can access your evidence alone. Shares automatically invalidate if you change your recovery mnemonic.</p>
+
+  <h2>Law enforcement access</h2>
+  <p>There is no backdoor. There is no master key. There is no way for Digital Compass Foundation, law enforcement, or any government to access your evidence without your recovery mnemonic or a share you have personally granted. This is by design and cannot be changed without rebuilding the entire encryption system. We will never build a backdoor.</p>
+
+  <h2>Third-party services</h2>
+  <ul>
+    <li><strong>ElevenLabs</strong> &mdash; Pre-recorded voice prompts bundled with the app for offline use. No data is sent to ElevenLabs during app use.</li>
+    <li><strong>FreeTSA and DigiCert</strong> &mdash; Independent timestamp authorities. Receive only evidence hashes (not evidence content) for timestamp verification.</li>
+    <li><strong>Firebase / Google Cloud Platform</strong> &mdash; Used for optional cloud backup only. All data stored is encrypted before upload. Firebase Authentication is used for backup accounts, derived from your recovery key (no email required).</li>
+  </ul>
+
+  <h2>Health data</h2>
+  <p>The app can optionally read data from Apple Health (HealthKit) or Google Health Connect for a window around each incident (2 hours before to 4 hours after). Data types include heart rate, sleep, steps, blood oxygen, and ambient noise level. This is read-only &mdash; the app never writes to your health data. Health data is encrypted and sealed into your evidence chain on-device. We never see it. You choose per incident whether to include health data.</p>
+
+  <h2>GPS and location</h2>
+  <p>When you grant the app location permission through your device's operating system, evidence items are tagged with GPS coordinates (latitude, longitude, accuracy, altitude, and source). This location data is encrypted alongside your evidence. We never see it. You can deny location permission, and the app will work without it &mdash; evidence simply won't have location tags.</p>
+
+  <h2>Children</h2>
+  <p>Me Myself &amp; I is not intended for children under 13. Users aged 13 to 18 should use the app with the guidance of a trusted adult, such as a parent, school counsellor, or social worker. The app does not knowingly collect personal information from children under 13.</p>
+
+  <h2>Data deletion</h2>
+  <p>You can delete all evidence from your device at any time from within the app. If you have cloud backup enabled, you can request deletion of your cloud backup by contacting <a href="mailto:privacy@digitalcompassfoundation.org" style="color:var(--teal);">privacy@digitalcompassfoundation.org</a>. Since we cannot read your backup data (it is encrypted with keys we do not hold), deletion means removing the encrypted data from our servers.</p>
+
+  <h2>Your rights under UK GDPR</h2>
+  <p>Our lawful basis for processing is legitimate interest (the safety of people experiencing abuse) and your consent. Because of our zero-knowledge architecture, most of your data is not accessible to us in any form. For the limited data we do process (such as cloud backup metadata and timestamp requests), you have the right to:</p>
+  <ul>
+    <li>Access the personal data we hold about you</li>
+    <li>Request correction of inaccurate data</li>
+    <li>Request deletion of your data</li>
+    <li>Object to processing</li>
+    <li>Lodge a complaint with the Information Commissioner's Office (ICO)</li>
+  </ul>
+  <p>Contact us at <a href="mailto:privacy@digitalcompassfoundation.org" style="color:var(--teal);">privacy@digitalcompassfoundation.org</a> to exercise any of these rights.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the app develops. We will note the date of the most recent update at the top of this page. Material changes will be communicated through the app or our website.</p>
+</div>
+
+<footer>
+  <p>Digital Compass Foundation &mdash; Registered CIO, England &amp; Wales</p>
+  <p style="margin-top:8px;">Me Myself &amp; I &mdash; Your Witness</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="mailto:hello@digitalcompassfoundation.org">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
