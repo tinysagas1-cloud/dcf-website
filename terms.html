@@ -14,7 +14,7 @@
   --cream: #FBF7F2; --cream-warm: #F5EDE4; --charcoal: #1E2A35; --charcoal-soft: #3A4A5A;
   --sage: #A8C5B8; --sage-light: #D0E0D6;
 }
-body { font-family: 'DM Sans', Arial, sans-serif; color: var(--charcoal); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body { font-family: 'DM Sans', Arial, sans-serif; color: var(--charcoal); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
 nav { position: fixed; top:0; left:0; right:0; z-index:100; background: rgba(30,42,53,0.95); backdrop-filter: blur(12px); padding: 0 40px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { color: var(--cream); font-size: 16px; font-weight: 600; letter-spacing: 0.5px; }
 .nav-logo span { color: var(--coral); }
@@ -26,7 +26,7 @@ footer { background: var(--charcoal); color: var(--sage-light); text-align: cent
 footer a { color: var(--coral-light); text-decoration: none; }
 .footer-links { margin-top: 16px; display: flex; gap: 24px; justify-content: center; }
 
-.page-content { max-width: 800px; margin: 0 auto; padding: 120px 40px 80px; }
+.page-content { max-width: 800px; margin: 0 auto; padding: 80px 40px 48px; flex: 1; overflow-y: auto; }
 .page-content h1 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 40px; line-height: 1.2; margin-bottom: 8px; }
 .page-content .subtitle { font-size: 18px; color: var(--charcoal-soft); margin-bottom: 48px; }
 .page-content h2 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 24px; color: var(--teal); margin: 40px 0 16px; }
@@ -57,6 +57,7 @@ footer a { color: var(--coral-light); text-decoration: none; }
     <a href="index.html">Home</a>
     <a href="privacy.html">Privacy</a>
     <a href="terms.html" class="active">Terms</a>
+    <a href="mailto:hello@digitalcompassfoundation.org">Contact</a>
   </div>
 </nav>
 
@@ -157,15 +158,8 @@ footer a { color: var(--coral-light); text-decoration: none; }
   Website: <a href="https://digitalcompassfoundation.org" style="color:var(--teal);">digitalcompassfoundation.org</a></p>
 </div>
 
-<footer>
-  <p>Digital Compass Foundation &mdash; Registered CIO, England &amp; Wales</p>
-  <p style="margin-top:8px;">Me Myself &amp; I &mdash; Your Witness</p>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Use</a>
-    <a href="mailto:hello@digitalcompassfoundation.org">Contact</a>
-  </div>
+<footer style="background:rgba(30,42,53,0.95);backdrop-filter:blur(12px);color:var(--sage-light);text-align:center;padding:8px 40px;font-size:12px;flex-shrink:0;">
+  Digital Compass Foundation &mdash; UK CIO &amp; Australian charity registrations pending &bull; <a href="mailto:hello@digitalcompassfoundation.org" style="color:var(--coral-light);text-decoration:none;">hello@digitalcompassfoundation.org</a>
 </footer>
 
 </body>
