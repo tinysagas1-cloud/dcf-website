@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information Packs | Digital Compass Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --teal: #2A7D6E; --teal-dark: #1B5E50; --coral: #D4826A; --coral-light: #E8A892;
+  --cream: #FBF7F2; --cream-warm: #F5EDE4; --charcoal: #1E2A35; --charcoal-soft: #3A4A5A;
+  --sage: #A8C5B8; --sage-light: #D0E0D6;
+}
+body { font-family: 'DM Sans', Arial, sans-serif; color: var(--charcoal); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
+nav { position: fixed; top:0; left:0; right:0; z-index:100; background: rgba(30,42,53,0.95); backdrop-filter: blur(12px); padding: 0 40px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { color: var(--cream); font-size: 16px; font-weight: 600; letter-spacing: 0.5px; }
+.nav-logo span { color: var(--coral); }
+.nav-links { display:flex; gap:32px; }
+.nav-links a { color: var(--sage-light); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--cream); }
+.nav-links a.active { color: var(--coral-light); }
+
+.packs-content {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 80px 40px 48px; text-align: center;
+}
+.packs-content h1 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(24px, 3vw, 36px); margin-bottom: 8px;
+}
+.packs-content p { font-size: 15px; color: var(--charcoal-soft); max-width: 500px; margin-bottom: 32px; }
+.pack-grid { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; max-width: 900px; }
+.pack-card {
+  flex: 1; min-width: 180px; max-width: 200px;
+  background: white; border-radius: 14px; padding: 24px 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  text-decoration: none; color: var(--charcoal);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+}
+.pack-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+.pack-icon { font-size: 36px; margin-bottom: 10px; }
+.pack-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+.pack-card p { font-size: 13px; color: var(--charcoal-soft); margin: 0; }
+.pack-card .dl { font-size: 12px; color: var(--teal); font-weight: 600; margin-top: 10px; }
+
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 13px; }
+  .pack-grid { flex-direction: column; align-items: center; }
+  .pack-card { max-width: 280px; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" style="text-decoration:none;"><div class="nav-logo">Digital Compass <span>Foundation</span></div></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="packs.html" class="active">Packs</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="mailto:hello@digitalcompassfoundation.org">Contact</a>
+  </div>
+</nav>
+
+<div class="packs-content">
+  <h1>Information Packs</h1>
+  <p>Download the pack for your audience. Each tells the same story in the language the reader thinks in.</p>
+
+  <div class="pack-grid">
+    <a href="packs/pack-survivors.pdf" target="_blank" class="pack-card">
+      <div class="pack-icon">&#128156;</div>
+      <h3>For You</h3>
+      <p>If you or someone you know needs help. No jargon. Plain language.</p>
+      <div class="dl">Download PDF &rarr;</div>
+    </a>
+    <a href="packs/pack-professionals.pdf" target="_blank" class="pack-card">
+      <div class="pack-icon">&#9878;</div>
+      <h3>For Professionals</h3>
+      <p>Lawyers, social workers, police DV units. Evidence standards and pricing.</p>
+      <div class="dl">Download PDF &rarr;</div>
+    </a>
+    <a href="packs/pack-funders.pdf" target="_blank" class="pack-card">
+      <div class="pack-icon">&#127793;</div>
+      <h3>For Funders</h3>
+      <p>Foundations, government, CSR teams. Impact model and sustainability.</p>
+      <div class="dl">Download PDF &rarr;</div>
+    </a>
+    <a href="packs/pack-technical.pdf" target="_blank" class="pack-card">
+      <div class="pack-icon">&#128272;</div>
+      <h3>Technical</h3>
+      <p>Architecture, encryption, evidence pipeline. For tech partners and auditors.</p>
+      <div class="dl">Download PDF &rarr;</div>
+    </a>
+  </div>
+</div>
+
+<footer style="background:rgba(30,42,53,0.95);backdrop-filter:blur(12px);color:var(--sage-light);text-align:center;padding:8px 40px;font-size:12px;flex-shrink:0;">
+  Digital Compass Foundation &mdash; UK CIO &amp; Australian charity registrations pending &bull; <a href="mailto:hello@digitalcompassfoundation.org" style="color:var(--coral-light);text-decoration:none;">hello@digitalcompassfoundation.org</a>
+</footer>
+</body>
+</html>
